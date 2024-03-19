@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 import { TECH_LOGOS } from "../data/TECH_LOGOS.js";
+import { scrollVariants } from "../data/ANIMATIONS.js";
 
 export default function Tech() {
   return (
-    <div className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8">
+    <motion.div
+      className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8"
+      variants={scrollVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+    >
       <div className="relative isolate overflow-hidden bg-gray-400/80 px-6 py-24 text-center shadow-xl shadow-blue-800/20 sm:rounded-3xl sm:px-16">
         <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
           Technologies used
@@ -13,7 +20,7 @@ export default function Tech() {
           and most efficient technologies is paramount. My toolkit includes a
           versatile array of programming languages, frameworks, and tools
           designed to deliver high-quality, scalable, and robust web solutions.
-          Here’s a snapshot of what I work with:
+          Here's a snapshot of what I work with:
         </p>
         <div className="mx-auto mt-20 grid sm:grid-cols-3 md:grid-cols-5 items-center gap-x-8 gap-y-12">
           {TECH_LOGOS.map((logo) => (
@@ -39,6 +46,6 @@ export default function Tech() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

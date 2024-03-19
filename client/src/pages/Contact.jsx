@@ -1,12 +1,20 @@
+import { useEffect, useContext } from "react";
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
   PhoneIcon,
   EnvelopeOpenIcon
 } from "@heroicons/react/24/outline";
+import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
-export default function Custom() {
+export default function Contact() {
+  const { setCurrentPage } = useContext(NavContext);
+
+  useEffect(() => {
+    setCurrentPage("Contact");
+  });
+
   return (
     <div className="relative isolate bg-gray-950">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">

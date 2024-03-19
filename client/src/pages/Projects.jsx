@@ -1,7 +1,15 @@
+import { useEffect, useContext } from "react";
 import { PROJECTS } from "../data/PROJECTS.js";
+import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
 export default function Projects() {
+  const { setCurrentPage } = useContext(NavContext);
+
+  useEffect(() => {
+    setCurrentPage("Projects");
+  });
+
   return (
     <div className="relative isolate bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

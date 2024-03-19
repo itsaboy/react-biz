@@ -9,11 +9,10 @@ import { NAVIGATION } from "../data/NAVIGATION.jsx";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const { currentPage, setCurrentPage } = useContext(NavContext);
+  const { currentPage } = useContext(NavContext);
 
   const handleClick = (page) => {
     setMobileMenuOpen(false);
-    setCurrentPage(page);
   };
 
   return (
@@ -41,7 +40,6 @@ export default function Header() {
             <Link
               key={link.name}
               to={link.to}
-              onClick={() => handleClick(link.name)}
             >
               <button className="px-3 py-2 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-blue-400/80 hover:shadow-md hover:shadow-blue-400/60 flex items-center">
                 <span className="relative z-10 pr-2">{link.icon}</span>
@@ -108,7 +106,7 @@ export default function Header() {
                     key={link.name}
                     to={link.to}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
-                    onClick={() => handleClick(link.name)}
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     <button className="text-gray-200 font-medium px-3 py-2 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-blue-400/80 hover:shadow-md hover:shadow-blue-400/60 w-full flex items-center">
                       <span className="relative z-10 pr-2">{link.icon}</span>

@@ -1,9 +1,17 @@
+import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CheckIcon, EnvelopeIcon, CreditCardIcon } from "@heroicons/react/20/solid";
 import { PRICING } from "../data/PRICING.js";
+import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
 export default function Pricing() {
+  const { setCurrentPage } = useContext(NavContext);
+
+  useEffect(() => {
+    setCurrentPage("Pricing");
+  });
+
   return (
     <div className="relative isolate overflow-hidden bg-gray-800">
       <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
