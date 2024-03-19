@@ -3,7 +3,7 @@ import {
   BuildingOffice2Icon,
   EnvelopeIcon,
   PhoneIcon,
-  EnvelopeOpenIcon
+  EnvelopeOpenIcon,
 } from "@heroicons/react/24/outline";
 import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
@@ -53,9 +53,10 @@ export default function Contact() {
               ))}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-200">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              I'm excited to learn about your project and explore how we can
+              collaborate to create something truly amazing. Your online success
+              is my priority, and I'm ready to contribute with my skills,
+              creativity, and dedication.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
               <div className="flex gap-x-4">
@@ -66,7 +67,7 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>High Point, NC 27265</dd>
+                <dd className="text-gray-400">High Point, NC 27265</dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -77,10 +78,7 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="tel:+1 (336) 880-4416"
-                  >
+                  <a className="text-gray-400" href="tel:+1 (336) 880-4416">
                     +1 (336) 880-4416
                   </a>
                 </dd>
@@ -94,10 +92,7 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="mailto:hello@example.com"
-                  >
+                  <a className="text-gray-400" href="mailto:hello@example.com">
                     ultimategauntletdev@gmail.com
                   </a>
                 </dd>
@@ -125,7 +120,7 @@ export default function Contact() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-200 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 focus:shadow-none sm:text-sm sm:leading-6 bg-gray-800 shadow-md shadow-blue-400/40 ring-2 ring-gray-950"
                   />
                 </div>
               </div>
@@ -142,7 +137,7 @@ export default function Contact() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-200 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 focus:shadow-none sm:text-sm sm:leading-6 bg-gray-800 shadow-md shadow-blue-400/40 ring-2 ring-gray-950"
                   />
                 </div>
               </div>
@@ -159,7 +154,7 @@ export default function Contact() {
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-200 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 focus:shadow-none sm:text-sm sm:leading-6 bg-gray-800 shadow-md shadow-blue-400/40 ring-2 ring-gray-950"
                   />
                 </div>
               </div>
@@ -176,7 +171,7 @@ export default function Contact() {
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-200 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 focus:shadow-none sm:text-sm sm:leading-6 bg-gray-800 shadow-md shadow-blue-400/40 ring-2 ring-gray-950"
                   />
                 </div>
               </div>
@@ -192,7 +187,7 @@ export default function Contact() {
                     name="message"
                     id="message"
                     rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-200 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 focus:shadow-none sm:text-sm sm:leading-6 bg-gray-800 shadow-md shadow-blue-400/40 ring-2 ring-gray-950"
                     defaultValue={""}
                   />
                 </div>

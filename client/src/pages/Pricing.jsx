@@ -85,7 +85,7 @@ export default function Pricing() {
               {PRICING.map((tier) => (
                 <div
                   key={tier.id}
-                  className="flex flex-col justify-between rounded-3xl bg-gray-900 p-8 shadow-xl ring-1 ring-gray-400/40 sm:p-10 shadow-gray-400/20 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-950"
+                  className="flex flex-col justify-between rounded-3xl bg-gray-900 p-8 sm:p-10  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 >
                   <div>
                     <h3
@@ -149,14 +149,13 @@ export default function Pricing() {
                   </Link>
                 </div>
               ))}
-              <div className="bg-gray-950 flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:flex-row lg:items-center shadow-lg shadow-gray-400/20">
+              <div className="bg-gray-950 flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:flex-row lg:items-center shadow-lg shadow-blue-400/40 ring-2 ring-gray-800">
                 <div className="lg:min-w-0 lg:flex-1">
                   <h3 className="text-lg font-semibold leading-8 tracking-tight text-blue-400">
                     Custom
                   </h3>
                   <p className="mt-1 text-base leading-7 text-gray-300">
-                    Dolor dolores repudiandae doloribus. Rerum sunt aut eum.
-                    Odit omnis non voluptatem sunt eos nostrum.
+                  Your vision is unique, and so should be your web solution. Let's create something exceptional together. Fill out the form to begin the journey toward realizing your bespoke web project.
                   </p>
                 </div>
                 <Link

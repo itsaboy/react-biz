@@ -11,7 +11,7 @@ export default function Tech() {
       whileInView="animate"
       viewport={{ once: true }}
     >
-      <div className="relative isolate overflow-hidden bg-gray-400/80 px-6 py-24 text-center shadow-xl shadow-blue-800/20 sm:rounded-3xl sm:px-16">
+      <div className="relative isolate overflow-hidden bg-gray-400/80 px-6 py-24 text-center shadow-xl shadow-blue-400/40 ring-2 ring-gray-900 sm:rounded-3xl sm:px-16">
         <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
           Technologies used
         </h2>

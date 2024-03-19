@@ -1,4 +1,5 @@
 import styles from "../bubble.module.css";
+import img0005 from "../assets/images/img0005.webp"
 
 export default function Hero() {
   return (
@@ -30,9 +31,9 @@ export default function Hero() {
             </p>
           </div>
           <img
-            src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+            src={img0005}
             alt=""
-            className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 shadow-lg shadow-gray-400/20"
+            className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
           />
         </div>
       </div>

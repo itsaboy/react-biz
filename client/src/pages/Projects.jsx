@@ -53,7 +53,7 @@ export default function Projects() {
           {PROJECTS.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col items-start justify-between bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-950 bg-gray-800 p-4 rounded-2xl shadow-lg shadow-blue-400/40 ring-1 ring-gray-400/40"
+              className="flex flex-col items-start justify-between bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 bg-gray-600 p-4 rounded-2xl shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
             >
               <div className="relative w-full">
                 <img
