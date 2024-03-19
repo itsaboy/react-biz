@@ -34,7 +34,7 @@ export default function Home() {
                   </a>
                 </div>
                 <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
-                  {"Building Digital Experiences That Resonate"
+                  {"Building digital experiences that resonate."
                     .split("")
                     .map((child, idx) => (
                       <span className={styles.hoverText} key={idx}>

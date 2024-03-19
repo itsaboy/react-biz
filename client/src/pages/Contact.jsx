@@ -38,7 +38,7 @@ export default function Custom() {
               </svg>
             </div>
             <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
-              {"Get in touch".split("").map((child, idx) => (
+              {"Get in touch.".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>
                   {child}
                 </span>
