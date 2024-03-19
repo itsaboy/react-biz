@@ -1,12 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ChevronRightIcon,
   CurrencyDollarIcon,
 } from "@heroicons/react/20/solid";
-import CodeSnippet from "../components/CodeSnippet";
+import HTMLSnippet from "../components/HTMLSnippet";
+import ReactSnippet from "../components/ReactSnippet";
 import styles from "../bubble.module.css";
 
 export default function Home() {
+  const [code, setCode] = useState("html");
+
+  const handleClick = (code) => {
+    setCode(code);
+  };
+
   return (
     <div className="bg-gray-950">
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-950 to-gray-900">
@@ -97,16 +105,31 @@ export default function Home() {
                     <div className="w-screen overflow-hidden rounded-tl-xl bg-gray-900">
                       <div className="flex bg-gray-800/60 ring-1 ring-white/5">
                         <div className="-mb-px flex text-sm font-medium leading-6 text-gray-400">
-                          <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-gray-200">
+                          <button
+                            className={
+                              code === "html"
+                                ? `border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-gray-200`
+                                : `border-r border-gray-600/10 px-4 py-2`
+                            }
+                            onClick={() => handleClick("html")}
+                          >
                             index.html
-                          </div>
-                          <div className="border-r border-gray-600/10 px-4 py-2">
+                          </button>
+                          <button
+                            className={
+                              code === "react"
+                                ? `border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-gray-200`
+                                : `border-r border-gray-600/10 px-4 py-2`
+                            }
+                            onClick={() => handleClick("react")}
+                          >
                             App.jsx
-                          </div>
+                          </button>
                         </div>
                       </div>
                       <div className="px-6 pb-14 pt-6 text-blue-200/80">
-                        <CodeSnippet />
+                        {code === "html" && <HTMLSnippet />}
+                        {code === "react" && <ReactSnippet />}
                       </div>
                     </div>
                   </div>

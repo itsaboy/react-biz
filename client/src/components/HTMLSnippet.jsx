@@ -1,4 +1,4 @@
-export default function CodeSnippet() {
+export default function HTMLSnippet() {
   return (
     <pre>
       <code>
