@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "node server/server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "cd server && npm run start",
     "dev": "cd client && npm run start",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",

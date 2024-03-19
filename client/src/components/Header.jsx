@@ -11,10 +11,6 @@ export default function Header() {
 
   const { currentPage } = useContext(NavContext);
 
-  const handleClick = (page) => {
-    setMobileMenuOpen(false);
-  };
-
   return (
     <header className="bg-gray-950">
       <nav
