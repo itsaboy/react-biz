@@ -1,6 +1,6 @@
 import {
   HomeIcon,
-  InformationCircleIcon,
+  QuestionMarkCircleIcon,
   WrenchScrewdriverIcon,
   BanknotesIcon,
   EnvelopeIcon,
@@ -15,7 +15,7 @@ export const NAVIGATION = [
   {
     name: "About",
     to: "/about",
-    icon: <InformationCircleIcon className=" h-6 w-auto text-gray-950" />,
+    icon: <QuestionMarkCircleIcon className=" h-6 w-auto text-gray-950" />,
   },
   {
     name: "Projects",

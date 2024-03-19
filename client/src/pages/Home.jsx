@@ -8,6 +8,7 @@ import HTMLSnippet from "../components/HTMLSnippet";
 import ReactSnippet from "../components/ReactSnippet";
 import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
+import logo from "../assets/icons/logo.svg";
 
 export default function Home() {
   const [code, setCode] = useState("html");
@@ -30,24 +31,11 @@ export default function Home() {
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
                 <img
-                  className="h-11"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="h-16 drop-shadow-2xl border-4 rounded-full border-blue-400"
+                  src={logo}
                   alt="Your Company"
                 />
-                <div className="mt-24 sm:mt-32 lg:mt-16">
-                  <a href="#" className="inline-flex space-x-6">
-                    <span className="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">
-                      What's new
-                    </span>
-                    <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-200">
-                      <span>Just shipped v0.1.0</span>
-                      <ChevronRightIcon
-                        className="h-5 w-5 text-gray-400"
-                        aria-hidden="true"
-                      />
-                    </span>
-                  </a>
-                </div>
+                <div className="mt-12" />
                 <h2 className="mt-10 text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl hover:cursor-default">
                   {"Building digital experiences that resonate."
                     .split("")

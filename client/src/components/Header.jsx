@@ -5,6 +5,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavContext } from "../context/NavContext.js";
 import { NAVIGATION } from "../data/NAVIGATION.jsx";
+import styles from "../bubble.module.css";
+import logo from "../assets/icons/logo.svg";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,7 +21,20 @@ export default function Header() {
       >
         <div className="-m-1.5 p-1.5">
           <span className="sr-only">Zach of All Trades</span>
-          <h1>Zach of All Trades</h1>
+          {currentPage === "Home" || mobileMenuOpen ? (
+            <h2 className="text-2xl font-base tracking-tight text-gray-300/80 hover:cursor-default">
+              {"Zach of All Trades".split("").map((child, idx) => (
+                <span className={styles.hoverText} key={idx}>
+                  {child}
+                </span>
+              ))}
+            </h2>
+          ) : (
+            <img
+              src={logo}
+              className="h-10 border-2 rounded-full border-blue-400"
+            />
+          )}
         </div>
         <div className="flex lg:hidden">
           <button
@@ -33,10 +48,7 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {NAVIGATION.map((link) => (
-            <Link
-              key={link.name}
-              to={link.to}
-            >
+            <Link key={link.name} to={link.to}>
               <button className="px-3 py-2 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-blue-400/80 hover:shadow-md hover:shadow-blue-400/60 flex items-center">
                 <span className="relative z-10 pr-2">{link.icon}</span>
                 <span
@@ -80,8 +92,8 @@ export default function Header() {
             <div className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-10 w-auto border-2 rounded-full border-blue-400"
+                src={logo}
                 alt=""
               />
             </div>
