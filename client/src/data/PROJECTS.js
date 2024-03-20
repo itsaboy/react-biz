@@ -1,29 +1,33 @@
+import voidWarrior from "../assets/images/void-warrior.webp";
+import art from "../assets/images/art.webp";
+import weather from "../assets/images/weather.webp";
+
 export const PROJECTS = [
   {
     id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
+    title: "Void Warrior",
+    href: "https://voidwarrior.com/",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "Embark on an epic journey through shadows and light in Void Warrior, a mesmerizing turn-based 2D JRPG created using the Godot Engine.",
+    imageUrl: voidWarrior,
+    alt: "A knight in a dark void surrounded by stars kneeling and holding a sword",
   },
   {
     id: 2,
-    title: "Boost your conversion rate",
-    href: "#",
+    title: "Neural Canvases",
+    href: "https://neuralcanvases.com/",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "Intricate algorithms dancing to the tune of artistic intuition, a testament to the symbiotic relationship between human creativity and machine precision.",
+    imageUrl: art,
+    alt: "A Suminagashi painting of Japanese woman walking in a creek in the forest",
   },
   {
     id: 3,
-    title: "Boost your conversion rate",
-    href: "#",
+    title: "World Wide Weather",
+    href: "https://world-wide-weather.com/",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "Your personal weather companion that delivers real-time weather conditions, accurate forecasts, and weather alerts tailored to your specific needs and locations.",
+    imageUrl: weather,
+    alt: "A grassy field in heavy rain and wind",
   },
 ];

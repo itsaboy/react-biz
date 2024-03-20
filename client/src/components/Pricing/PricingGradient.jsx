@@ -13,8 +13,8 @@ export default function ProjectGradient() {
       />
       <defs>
         <radialGradient id="6d1bd035-0dd1-437e-93fa-59d316231eb0">
-          <stop stopColor="#7775D6" />
-          <stop offset={1} stopColor="#E935C1" />
+          <stop stopColor="#1e40af" />
+          <stop offset={1} stopColor="#1e3a8a" />
         </radialGradient>
       </defs>
     </svg>
