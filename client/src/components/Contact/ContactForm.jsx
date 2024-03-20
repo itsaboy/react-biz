@@ -26,6 +26,15 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await sendMessage(firstName, lastName, email, phoneNumber, message);
+    if (sendSuccess) {
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+      setMessage("");
+    } else {
+      return;
+    }
   };
 
   return (

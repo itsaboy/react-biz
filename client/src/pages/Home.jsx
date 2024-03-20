@@ -17,7 +17,7 @@ export default function Home() {
           <HomeTextSection />
           <HomeCodeSection />
         </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-16 bg-gradient-to-t from-gray-900" />
+        <div className="absolute inset-x-0 bottom-0 z-50 h-16 bg-gradient-to-t from-gray-900" />
       </div>
     </div>
   );

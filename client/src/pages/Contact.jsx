@@ -2,10 +2,14 @@ import { useEffect, useContext } from "react";
 import ContactSVG from "../components/Contact/ContactSVG";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactForm from "../components/Contact/ContactForm";
+import Loading from "../components/Loading";
 import { NavContext } from "../context/NavContext";
+import { useSendMessage } from "../hooks/useSendMessage";
 
 export default function Contact() {
   const { setCurrentPage } = useContext(NavContext);
+
+  const { sendLoading } = useSendMessage();
 
   useEffect(() => {
     setCurrentPage("Contact");
@@ -22,9 +26,12 @@ export default function Contact() {
             <ContactInfo />
           </div>
         </div>
-        <ContactForm />
+        <div className="relative">
+          {sendLoading ? <Loading /> : null}         
+          <ContactForm />
+        </div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-16 bg-gradient-to-t from-gray-900" />
+      <div className="absolute z-50 inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-900" />
     </div>
   );
 }
