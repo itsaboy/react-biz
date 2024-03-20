@@ -1,12 +1,9 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import MobileMenu from "./MobileMenu.jsx";
-import { NavContext } from "../../context/NavContext.js";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const { currentPage } = useContext(NavContext);
 
   return (
     <header className="bg-gray-950">

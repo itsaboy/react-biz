@@ -4,6 +4,10 @@ import validator from "validator";
 const Schema = mongoose.Schema;
 
 const messageSchema = new Schema({
+  currentPlan: {
+    type: String,
+    required: false,
+  },
   firstName: {
     type: String,
     required: true,
@@ -27,6 +31,7 @@ const messageSchema = new Schema({
 });
 
 messageSchema.statics.sendMessage = async function (
+  currentPlan,
   firstName,
   lastName,
   email,
@@ -38,6 +43,7 @@ messageSchema.statics.sendMessage = async function (
   }
 
   const newMessage = await this.create({
+    currentPlan,
     firstName,
     lastName,
     email,

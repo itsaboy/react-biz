@@ -6,6 +6,7 @@ export const useSendMessage = () => {
   const [sendLoading, setSendLoading] = useState(false);
 
   const sendMessage = async (
+    currentPlan,
     firstName,
     lastName,
     email,
@@ -22,6 +23,7 @@ export const useSendMessage = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        currentPlan: currentPlan,
         firstName: firstName,
         lastName: lastName,
         email: email,

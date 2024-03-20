@@ -1,8 +1,16 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import ButtonTwo from "../ButtonTwo.jsx";
+import { NavContext } from "../../context/NavContext.js";
 
 export default function PricingCustom() {
+  const { setCurrentPlan } = useContext(NavContext);
+
+  const handleClick = (plan) => {
+    setCurrentPlan(plan);
+  }
+
   return (
     <div className="bg-gray-950 flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:flex-row lg:items-center shadow-lg shadow-blue-400/40 ring-2 ring-gray-800">
       <div className="lg:min-w-0 lg:flex-1">
@@ -15,9 +23,9 @@ export default function PricingCustom() {
           journey toward realizing your bespoke web project.
         </p>
       </div>
-      <Link to="/contact">
+      <Link to="/contact" onClick={() => handleClick("Custom")}>
         <ButtonTwo
-          text={"Contact Info"}
+          text={"Contact"}
           icon={<EnvelopeIcon className="h-6 w-auto" />}
         />
       </Link>

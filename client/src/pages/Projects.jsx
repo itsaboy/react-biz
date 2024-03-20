@@ -5,10 +5,11 @@ import { NavContext } from "../context/NavContext";
 import styles from "../bubble.module.css";
 
 export default function Projects() {
-  const { setCurrentPage } = useContext(NavContext);
+  const { setCurrentPage, setCurrentPlan } = useContext(NavContext);
 
   useEffect(() => {
     setCurrentPage("Projects");
+    setCurrentPlan(null);
   });
 
   return (

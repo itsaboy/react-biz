@@ -4,10 +4,11 @@ import HomeCodeSection from "../components/Home/HomeCodeSection";
 import { NavContext } from "../context/NavContext";
 
 export default function Home() {
-  const { setCurrentPage } = useContext(NavContext);
+  const { setCurrentPage, setCurrentPlan } = useContext(NavContext);
 
   useEffect(() => {
     setCurrentPage("Home");
+    setCurrentPlan(null);
   });
 
   return (

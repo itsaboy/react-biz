@@ -1,9 +1,17 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CheckIcon, CreditCardIcon } from "@heroicons/react/20/solid";
+import { CheckIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 import ButtonTwo from "../ButtonTwo.jsx";
+import { NavContext } from "../../context/NavContext.js";
 import { PRICING } from "../../data/PRICING.js";
 
 export default function PricingPlanCards() {
+  const { setCurrentPlan } = useContext(NavContext);
+
+  const handleClick = (plan) => {
+    setCurrentPlan(plan);
+  }
+
   return (
     <>
       {PRICING.map((tier) => (
@@ -45,13 +53,13 @@ export default function PricingPlanCards() {
             </ul>
           </div>
           <Link
-            href={tier.href}
-            aria-describedby={tier.id}
+            onClick={() => handleClick(tier.name)}
+            to="/contact"
             className="grid place-items-center justify-center mt-10"
           >
             <ButtonTwo
-              text={"Get Started Today"}
-              icon={<CreditCardIcon className="h-6 w-auto" />}
+              text={"Get Started"}
+              icon={<EnvelopeIcon className="h-6 w-auto" />}
             />
           </Link>
         </div>

@@ -1,9 +1,10 @@
 import { Message } from "../models/messageModel.js";
 
 export const sentMessage = async (req, res) => {
-  const { firstName, lastName, email, phoneNumber, message } = req.body;
+  const { currentPlan, firstName, lastName, email, phoneNumber, message } = req.body;
   try {
     const newMessage = await Message.sendMessage(
+      currentPlan,
       firstName,
       lastName,
       email,

@@ -28,9 +28,12 @@ const router = createBrowserRouter(
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPlan, setCurrentPlan] = useState(null);
 
   return (
-    <NavContext.Provider value={{ currentPage, setCurrentPage }}>
+    <NavContext.Provider
+      value={{ currentPage, setCurrentPage, currentPlan, setCurrentPlan }}
+    >
       <RouterProvider router={router} />
     </NavContext.Provider>
   );

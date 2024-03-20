@@ -14,7 +14,7 @@ export const PRICING = [
     ],
   },
   {
-    name: "Fullstack Application",
+    name: "Fullstack Web Application",
     id: "tier-backend",
     href: "#",
     priceHourly: "$79",

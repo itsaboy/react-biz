@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { EnvelopeOpenIcon } from "@heroicons/react/24/outline";
 import InputOne from "../InputOne";
 import InputTwo from "../InputTwo";
+import InputThree from "../InputThree";
 import SubmitButton from "../SubmitButton";
 import FeedbackOne from "../FeedbackOne";
 import FeedbackTwo from "../FeedbackTwo";
+import { NavContext } from "../../context/NavContext.js";
 import { useSendMessage } from "../../hooks/useSendMessage";
 
 export default function ContactForm() {
@@ -13,6 +15,8 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+
+  const { currentPlan } = useContext(NavContext);
 
   const {
     sendMessage,
@@ -25,7 +29,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await sendMessage(firstName, lastName, email, phoneNumber, message);
+    await sendMessage( currentPlan, firstName, lastName, email, phoneNumber, message);
     if (sendSuccess) {
       setFirstName("");
       setLastName("");
@@ -44,6 +48,11 @@ export default function ContactForm() {
     >
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          {!currentPlan ? null : (
+            <div className="sm:col-span-2">
+              <InputThree />
+            </div>
+          )}
           <InputOne
             htmlFor={"first-name"}
             label={"First Name"}

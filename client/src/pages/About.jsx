@@ -5,10 +5,11 @@ import AISection from "../components/About/AISection";
 import { NavContext } from "../context/NavContext";
 
 export default function About() {
-  const { setCurrentPage } = useContext(NavContext);
+  const { setCurrentPage, setCurrentPlan } = useContext(NavContext);
 
   useEffect(() => {
     setCurrentPage("About");
+    setCurrentPlan(null);
   });
 
   return (
