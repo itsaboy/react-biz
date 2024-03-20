@@ -19,6 +19,22 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(directory, "../client/dist/index.html"));
 });
 
+app.get("/about", (req, res) => {
+  res.sendFile(path.join(directory, "../client/dist/index.html"));
+});
+
+app.get("/projects", (req, res) => {
+  res.sendFile(path.join(directory, "../client/dist/index.html"));
+});
+
+app.get("/pricing", (req, res) => {
+  res.sendFile(path.join(directory, "../client/dist/index.html"));
+});
+
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(directory, "../client/dist/index.html"));
+});
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
