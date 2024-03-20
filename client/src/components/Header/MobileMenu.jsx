@@ -19,7 +19,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             <img
               className="h-10 w-auto border-2 rounded-full border-blue-400"
               src={logo}
-              alt=""
+              alt="Zach of All Trades"
             />
           </div>
           <button

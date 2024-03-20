@@ -26,6 +26,7 @@ export default function NavBar({ mobileMenuOpen, setMobileMenuOpen }) {
         ) : (
           <img
             src={logo}
+            alt="Zach of All Trades"
             className="h-10 border-2 rounded-full border-blue-400"
           />
         )}
