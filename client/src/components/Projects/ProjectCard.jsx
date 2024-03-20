@@ -12,7 +12,7 @@ export default function ProjectCard() {
           <div className="relative w-full">
             <img
               src={post.imageUrl}
-              alt=""
+              alt={post.alt}
               className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
             />
             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -20,7 +20,7 @@ export default function ProjectCard() {
           <div className="max-w-xl">
             <div className="group relative mt-6">
               <h3 className="mt-3 text-lg font-semibold leading-6 text-blue-300 group-hover:text-gray-600">
-                <a href={post.href}>
+                <a href={post.href} target="_blank">
                   <span className="absolute inset-0" />
                   {post.title}
                 </a>
