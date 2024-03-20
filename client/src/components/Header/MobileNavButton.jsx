@@ -18,7 +18,15 @@ export default function MobileNavButton({ setMobileMenuOpen }) {
         >
           <button className="text-gray-200 font-medium px-3 py-2 rounded-md overflow-hidden relative transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-blue-400/80 hover:shadow-md hover:shadow-blue-400/60 w-full flex items-center">
             <span className="relative z-10 pr-2">{link.icon}</span>
-            <span className="relative z-10">{link.name}</span>
+            <span
+              className={
+                currentPage === link.name
+                  ? `text-gray-950 relative z-10`
+                  : `text-gray-200 relative z-10`
+              }
+            >
+              {link.name}
+            </span>
             <motion.div
               initial={{ left: 0 }}
               animate={{ left: "-300%" }}
