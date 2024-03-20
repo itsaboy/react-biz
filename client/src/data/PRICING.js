@@ -17,7 +17,7 @@ export const PRICING = [
     name: "Fullstack Web Application",
     id: "tier-backend",
     href: "#",
-    priceHourly: "$79",
+    priceHourly: "$99",
     description: "Includes all features from Tier 1, plus:",
     features: [
       "Custom Backend Development",
