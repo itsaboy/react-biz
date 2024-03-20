@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react";
-import Hero from "../components/Hero";
-import Tech from "../components/Tech";
-import AIPictures from "../components/AIPictures";
+import HeroSection from "../components/About/HeroSection";
+import TechSection from "../components/About/TechSection";
+import AISection from "../components/About/AISection";
 import { NavContext } from "../context/NavContext";
 
 export default function About() {
@@ -14,9 +14,9 @@ export default function About() {
   return (
     <div className="bg-gray-900">
       <div className="isolate">
-        <Hero />
-        <Tech />
-        <AIPictures />
+        <HeroSection />
+        <TechSection />
+        <AISection />
       </div>
     </div>
   );

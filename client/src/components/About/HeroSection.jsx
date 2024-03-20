@@ -1,5 +1,5 @@
-import styles from "../bubble.module.css";
-import img0005 from "../assets/images/img0005.webp"
+import styles from "../../bubble.module.css";
+import img0005 from "../../assets/images/img0005.webp"
 
 export default function Hero() {
   return (
