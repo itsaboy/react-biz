@@ -35,7 +35,7 @@ export default function AIPictures() {
             >
               <img
                 src={img0001}
-                alt=""
+                alt="a woman next to a creek in the forest walking away from the camera"
                 className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
               />
             </div>
@@ -45,21 +45,21 @@ export default function AIPictures() {
               <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                 <img
                   src={img0002}
-                  alt=""
+                  alt="a close-up picture of a glass of tea"
                   className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                 <img
                   src={img0003}
-                  alt=""
+                  alt="a picture of a rocky beach with rough waves"
                   className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                 <img
                   src={img0004}
-                  alt=""
+                  alt="a close-up picture of a plate with steak and potatoes"
                   className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
                 />
               </div>

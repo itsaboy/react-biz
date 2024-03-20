@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
           <img
             src={img0005}
-            alt=""
+            alt="a server rack ina  dark room"
             className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 shadow-lg shadow-blue-400/40 ring-2 ring-gray-900"
           />
         </div>

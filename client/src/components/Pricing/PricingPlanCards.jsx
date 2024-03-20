@@ -26,7 +26,7 @@ export default function PricingPlanCards() {
                 /hour
               </span>
             </div>
-            <p className="mt-6 text-base leading-7 text-gray-400">
+            <p className="mt-6 text-semibold leading-7 text-gray-400">
               {tier.description}
             </p>
             <ul
