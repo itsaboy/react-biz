@@ -27,9 +27,11 @@ export default function Pricing() {
           </h2>
         </div>
         <div className="relative mt-6">
-          <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            numquam eligendi quos odit doloribus molestiae voluptatum.
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-gray-200">
+            Choosing the right partner for your web development needs is a
+            critical decision, and understanding the investment is a big part of
+            that choice. This pricing structure is designed to be clear,
+            competitive, and adaptable.
           </p>
           <PricingGradient />
         </div>

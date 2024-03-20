@@ -1,9 +1,11 @@
+import AboutSVG from "./AboutSVG";
 import styles from "../../bubble.module.css";
 import img0005 from "../../assets/images/img0005.webp"
 
 export default function Hero() {
   return (
     <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-gray-950 to-gray-900 pt-0 md:pt-14">
+      <AboutSVG />
       <div
         className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-800 shadow-xl shadow-gray-200/20 ring-1 ring-blue-600 sm:-mr-80 lg:-mr-96"
         aria-hidden="true"

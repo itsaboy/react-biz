@@ -36,10 +36,11 @@ export default function HomeTextSection() {
               />
             </Link>
             <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-200"
+              href="https://github.com/itsaboy"
+              target="_blank"
+              className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-600"
             >
-              View on GitHub <span aria-hidden="true">→</span>
+              View GitHub <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
