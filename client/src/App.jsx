@@ -11,6 +11,7 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Error from "./pages/Error.jsx";
 import { NavContext } from "./context/NavContext.js";
 import "./App.css";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route index path="/projects" element={<Projects />} />,
       <Route index path="/contact" element={<Contact />} />,
       <Route index path="/pricing" element={<Pricing />} />,
+      <Route index path="*" element={<Error />} />,
     </Route>
   )
 );

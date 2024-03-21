@@ -1,11 +1,11 @@
-import { CheckCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
+import { XCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 export default function FeedbackTwo({ errorText, setSendError }) {
   return (
     <div className="rounded-md bg-red-200 p-3">
       <div className="flex">
         <div className="flex-shrink-0">
-          <CheckCircleIcon
+          <XCircleIcon
             className="h-5 w-5 text-red-600"
             aria-hidden="true"
           />

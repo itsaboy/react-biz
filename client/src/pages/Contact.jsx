@@ -27,7 +27,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="relative">
-          {sendLoading ? <Loading /> : null}         
+          {sendLoading ? <Loading /> : null}
           <ContactForm />
         </div>
       </div>
