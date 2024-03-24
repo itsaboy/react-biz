@@ -10,7 +10,7 @@ export default function Projects() {
   useEffect(() => {
     setCurrentPage("Projects");
     setCurrentPlan(null);
-  });
+  }, [setCurrentPage, setCurrentPlan]);
 
   return (
     <div className="relative isolate bg-gray-900 py-24 sm:py-32">

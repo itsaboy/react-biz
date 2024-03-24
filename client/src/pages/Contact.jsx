@@ -13,7 +13,7 @@ export default function Contact() {
 
   useEffect(() => {
     setCurrentPage("Contact");
-  });
+  }, [setCurrentPage]);
 
   return (
     <div className="relative isolate bg-gray-950">

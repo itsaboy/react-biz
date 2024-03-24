@@ -11,7 +11,7 @@ export default function Pricing() {
 
   useEffect(() => {
     setCurrentPage("Pricing");
-  });
+  }, [setCurrentPage]);
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-800">

@@ -1,5 +1,6 @@
 import voidWarrior from "../assets/images/void-warrior.webp";
 import art from "../assets/images/art.webp";
+import finance from "../assets/images/finance.webp";
 import weather from "../assets/images/weather.webp";
 
 export const PROJECTS = [
@@ -23,10 +24,19 @@ export const PROJECTS = [
   },
   {
     id: 3,
+    title: "Asset Atlus",
+    href: "https://assetatlus.com//",
+    description:
+      "A simple finance app with calculators, form lookups, and customizable watchlists.",
+    imageUrl: finance,
+    alt: "A grassy field in heavy rain and wind",
+  },
+  {
+    id: 4,
     title: "World Wide Weather",
     href: "https://world-wide-weather.com/",
     description:
-      "Your personal weather companion that delivers real-time weather conditions, accurate forecasts, and weather alerts tailored to your specific needs and locations.",
+      "Personal weather companion delivering real-time weather, forecasts, and weather alerts tailored to your specific needs and locations.",
     imageUrl: weather,
     alt: "A grassy field in heavy rain and wind",
   },

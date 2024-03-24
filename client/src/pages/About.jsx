@@ -10,7 +10,7 @@ export default function About() {
   useEffect(() => {
     setCurrentPage("About");
     setCurrentPlan(null);
-  });
+  }, [setCurrentPage, setCurrentPlan]);
 
   return (
     <div className="bg-gray-900">
