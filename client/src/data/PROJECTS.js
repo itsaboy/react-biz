@@ -1,4 +1,5 @@
 import voidWarrior from "../assets/images/void-warrior.webp";
+import blog from "../assets/images/blog.png";
 import art from "../assets/images/art.webp";
 import finance from "../assets/images/finance.webp";
 import weather from "../assets/images/weather.webp";
@@ -15,12 +16,11 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: "Neural Canvases",
-    href: "https://neuralcanvases.com/",
-    description:
-      "Intricate algorithms dancing to the tune of artistic intuition, a testament to the symbiotic relationship between human creativity and machine precision.",
-    imageUrl: art,
-    alt: "A Suminagashi painting of Japanese woman walking in a creek in the forest",
+    title: "CMS Blog (Preview)",
+    href: "https://youtu.be/wVIo_lqq_04?si=Jz93V7PrKNuJXf2Z",
+    description: "A personal blog website template with a simple CMS for content management.",
+    imageUrl: blog,
+    alt: "The landing page for a cat's blog website",
   },
   {
     id: 3,
@@ -33,6 +33,15 @@ export const PROJECTS = [
   },
   {
     id: 4,
+    title: "Neural Canvases",
+    href: "https://neuralcanvases.com/",
+    description:
+      "Intricate algorithms dancing to the tune of artistic intuition, a testament to the symbiotic relationship between human creativity and machine precision.",
+    imageUrl: art,
+    alt: "A Suminagashi painting of Japanese woman walking in a creek in the forest",
+  },
+  {
+    id: 5,
     title: "World Wide Weather",
     href: "https://world-wide-weather.com/",
     description:

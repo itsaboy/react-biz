@@ -10,7 +10,7 @@ export default function NavBar({ mobileMenuOpen, setMobileMenuOpen }) {
 
   return (
     <nav
-      className="relative mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+      className="relative mx-auto flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div className="-m-1.5 p-1.5">
