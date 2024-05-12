@@ -31,15 +31,15 @@ export const PROJECTS = [
     imageUrl: finance,
     alt: "A grassy field in heavy rain and wind",
   },
-  {
-    id: 4,
-    title: "Neural Canvases",
-    href: "https://neuralcanvases.com/",
-    description:
-      "Intricate algorithms dancing to the tune of artistic intuition, a testament to the symbiotic relationship between human creativity and machine precision.",
-    imageUrl: art,
-    alt: "A Suminagashi painting of Japanese woman walking in a creek in the forest",
-  },
+  // {
+  //   id: 4,
+  //   title: "Neural Canvases",
+  //   href: "https://neuralcanvases.com/",
+  //   description:
+  //     "Intricate algorithms dancing to the tune of artistic intuition, a testament to the symbiotic relationship between human creativity and machine precision.",
+  //   imageUrl: art,
+  //   alt: "A Suminagashi painting of Japanese woman walking in a creek in the forest",
+  // },
   {
     id: 5,
     title: "World Wide Weather",
